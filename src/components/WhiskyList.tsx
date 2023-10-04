@@ -12,7 +12,10 @@ const WhiskyList = ({ whiskies }: WhiskyListProps) => {
         {whiskies.map((whisky: WhiskyType) => {
           return (
             <li key={whisky.name}>
-              {whisky.name} by {whisky.year}
+              Name: {whisky.name}
+              <br />
+              Year: {whisky.year}
+              <br></br>
             </li>
           );
         })}

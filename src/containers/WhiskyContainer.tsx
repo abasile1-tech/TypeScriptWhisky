@@ -10,13 +10,13 @@ const WhiskyContainer = () => {
   }, []);
 
   const fetchWhiskies = () => {
-    fetch(BASE_URL + "/api/whiskies")
+    fetch(BASE_URL + "/whiskies")
       .then((response) => response.json())
       .then((whiskies) => setWhiskies(whiskies));
   };
   return (
     <>
-      <WhiskyList whiskies={whiskies} />;
+      <WhiskyList whiskies={whiskies} />
     </>
   );
 };
