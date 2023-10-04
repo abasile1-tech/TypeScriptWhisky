@@ -14,6 +14,11 @@ const WhiskyContainer = () => {
       .then((response) => response.json())
       .then((whiskies) => setWhiskies(whiskies));
   };
-
-  <WhiskyList whiskies={whiskies} />;
+  return (
+    <>
+      <WhiskyList whiskies={whiskies} />;
+    </>
+  );
 };
+
+export default WhiskyContainer;

@@ -1,6 +1,10 @@
 import { WhiskyType } from "../types";
 
-const WhiskyList = ({ whiskies }) => {
+interface WhiskyListProps {
+  whiskies: WhiskyType[];
+}
+
+const WhiskyList = ({ whiskies }: WhiskyListProps) => {
   return (
     <div id="whisky-list">
       <h2>All the whiskies!</h2>
